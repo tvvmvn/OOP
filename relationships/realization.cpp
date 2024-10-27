@@ -3,21 +3,24 @@
 using namespace std;
 
 
-// realization
+// Base class
 class Animal {
   public:
-    virtual string sound() = 0;
+    virtual void animalSound() = 0;
 };
 
-class Cat : public Animal {
+// Derived class
+class Pig : public Animal {
   public:
-    string sound() {
-      return "Meow";
+    void animalSound() {
+      cout << "The pig says: wee wee \n";
     }
 };
 
-int main() {
-  Cat cat;
-
-  cout << cat.sound();
-}
+// Derived class
+class Dog : public Animal {
+  public:
+    void animalSound() {
+      cout << "The dog says: bow wow \n";
+    }
+};

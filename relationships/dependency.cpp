@@ -4,25 +4,27 @@ using namespace std;
 
 
 // isp
-class Fuel {
+class Gasoline {
   public:
-    string type;
-    
     int fill() {
-      return 100;
+      return 40;
     }
 };
 
 class Car {
   public:
-    void drive(Fuel fuel) {
-      cout << fuel.fill();
+    void drive(Gasoline gasoline) {
+      int fuel = gasoline.fill();
+      
+      if (fuel > 0) {
+        cout << "It can drive!";
+      } 
     }
 };
 
 int main() {
-  Fuel fuel;
+  Gasoline gasoline;
   Car car;
 
-  car.drive(fuel);
+  car.drive(gasoline);
 }

@@ -2,9 +2,6 @@
 #include <string>
 using namespace std;
 
-
-// Association
-
 class Person {
   public:
     string name;

@@ -2,19 +2,9 @@
 #include <string>
 using namespace std;
 
-
 // Generalization
+class Coffee {};
 
-class Car {
-  public:
-    string model;
-};
+class Americano : public Coffee {};
+class Latte : public Coffee {};
 
-class KoreanCar : public Car {};
-
-int main() {
-  KoreanCar car;
-  car.model = "Avante Hybrid";
-
-  cout << car.model;
-}
