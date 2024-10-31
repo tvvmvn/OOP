@@ -2,12 +2,13 @@
 #include <string>
 using namespace std;
 
-// Aggregation
-
 class Keyboard {
   public:
     string model;
 };
+
+class WhiteKeyboard : public Keyboard {};
+class BlackKeyboard : public Keyboard {};
 
 class Computer {
   public:
@@ -15,11 +16,12 @@ class Computer {
 };
 
 int main() {
-  Keyboard keyboard;
-  keyboard.model = "Logitec K1";
+  WhiteKeyboard myKeyboard;
+  myKeyboard.model = "kbd01";
 
   Computer computer;
-  computer.keyboard = keyboard;
+  // you can switch from one to another style of keyboard.
+  computer.keyboard = myKeyboard;
 
   cout << computer.keyboard.model;
 }

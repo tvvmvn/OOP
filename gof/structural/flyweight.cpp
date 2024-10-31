@@ -44,3 +44,11 @@ int main() {
 
   return 0;
 }
+
+/*
+Output
+
+Drawing character 'A' at position 0
+Drawing character 'B' at position 1
+Drawing character 'C' at position 2
+*/

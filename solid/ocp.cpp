@@ -3,17 +3,14 @@
 using namespace std;
 
 
-/*
-A class should open for extensions,
-but closed for modification.
-*/
-
 class PaymentProcessor {
   public:
     void withCreditCard() {}
 };
 
+// you better extends a class, without modifying a class.
+// then you can go back to previous one at anytime.
 class PaymentProcessorExtended : PaymentProcessor {
   public:
-    void withPaypal() {}
+    void withApplePay() {}
 };

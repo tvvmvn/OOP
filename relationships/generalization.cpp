@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 
-// Generalization
+// Both are a type of coffee.
 class Coffee {};
 
 class Americano : public Coffee {};

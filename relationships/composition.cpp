@@ -2,25 +2,16 @@
 #include <string>
 using namespace std;
 
+class AvanteEngine {};
 
-// Composition
-
-class Legs {
+class Avante {
   public:
-    string material;
-};
-
-class Desk {
-  public:
-    Legs legs;
+    AvanteEngine engine;
 };
 
 int main() {
-  Legs legs;
-  legs.material = "Steel";
+  AvanteEngine eg;
 
-  Desk desk;
-  desk.legs = legs;
-
-  cout << desk.legs.material;
+  Avante avante;
+  avante.engine = eg;
 }

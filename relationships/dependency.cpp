@@ -16,9 +16,7 @@ class Car {
     void drive(Gasoline gasoline) {
       int fuel = gasoline.fill();
       
-      if (fuel > 0) {
-        cout << "It can drive!";
-      } 
+      cout << "It can drive now!";
     }
 };
 

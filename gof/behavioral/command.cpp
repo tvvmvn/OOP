@@ -50,7 +50,13 @@ int main() {
   Invoker invoker;
 
   invoker.setCommand(&command);
-  invoker.executeCommand(); // Receiver is performing an action.
+  invoker.executeCommand(); 
 
   return 0;
 }
+
+/*
+Output
+
+Receiver is performing an action.
+*/

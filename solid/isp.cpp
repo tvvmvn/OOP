@@ -10,11 +10,7 @@ class MFP {
     virtual void fax() = 0;
 };
 
-/*
-To adhere to the ISP, we could break down the MFP interface 
-into smaller interfaces.
-*/
-
+// Break down the MFP interface into smaller interfaces.
 class Printer {
   public:
     virtual void print() = 0;
